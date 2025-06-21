@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome Page</title>
+  <link rel="stylesheet" href="../assets/css/welcomePage.css">
+</head>
+<body style=" ">
+  <button onclick="logout()">تسجيل خروج</button>
+  <h2 style="">مرحبا بك</h2>
+</body>
+
+
+<script>
+  let h2=document.getElementsByTagName('h2')[0];
+  let name=window.localStorage.getItem('names');
+  if(name){
+    h2.textContent=`مرحبا بك ${name}`
+    console.log(name);
+  }else{
+    h2.textContent='مرحباً بك تم تسجيل الدخول بنجاح لكن لم يتم العثور علي اسم'
+  }
+  
+  function logout(){
+    localStorage.removeItem('names');
+    window.history.go(-1);
+  }
+</script>
+</html>

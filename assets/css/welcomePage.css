@@ -1,0 +1,33 @@
+
+body{
+  display: flex; justify-content: center;
+  background-color: rgba(197, 178, 178, 0.507);
+}
+h2 {
+  text-align: center;
+  margin-top: 100px;
+  background-color: green;
+  padding: 50px;
+  width: fit-content;
+  color: white;
+  font-size: bold;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+button{
+  position: absolute;
+  right: 20px;
+  top: 30px;
+  border: none;
+  cursor: pointer;
+  padding: 30px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
